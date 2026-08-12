@@ -1,8 +1,8 @@
 ---
 
 copyright:
-   years: 2020, 2025
-lastupdated: "2025-10-28"
+   years: 2020, 2026
+lastupdated: "2026-06-15"
 
 keywords: disaster recovery, DR, what is disaster recovery, DR strategy, disaster recovery options, disaster recovery strategy
 
@@ -20,7 +20,7 @@ subcollection: resiliency
 
 When you design and build IT workloads, focus is often placed on maintaining [high availability](#x2284708){: term} (HA). HA is the process of designing out single points of failure so that workloads can survive and avoid outages that are otherwise caused by failing infrastructure.
 
-Disasters are different. Disasters cause a workload to go down despite attempts to make it highly available. When you design and deploy a cloud workload, you must consider how that workload might be affected by a disaster and how it can be recovered. In a disaster, there may be steps IBM Cloud must take as part of the recovery process - such as recover infrastructure, and there may be steps that you need to take too - such as recover data. You must ensure that your data, which often includes configuration data, is backed up and available for recovery.
+Disasters are different. Disasters cause a workload to go down despite attempts to make it highly available. When you design and deploy a cloud workload, you must consider how that workload might be affected by a disaster and how it can be recovered. In a disaster, there may be steps {{site.data.keyword.cloud_notm}} must take as part of the recovery process, such as recover infrastructure. And there may be steps that you need to take too, such as recover data. You must ensure that your data, which often includes configuration data, is backed up and available for recovery.
 
 The worst disasters have widespread consequences, which means that affected workloads might require recovery in a different region altogether.
 
@@ -97,8 +97,3 @@ These questions are as much business considerations as technical ones, as costs 
 {: #read-the-docs}
 
 Each {{site.data.keyword.cloud_notm}} service is documented separately and includes a section on BCDR requirements that are specific to that product. Ensure that you review and follow the guidance provided for each service that you use. For help finding specific links to topics, see [Service documentation for high availability and disaster recovery](/docs/resiliency?topic=resiliency-service-ha-dr).
-
-### Disaster Recovery is a Shared Responsibility
-{: #DR-is-a-shared-responsibility}
-
-Above all, remember that DR in {{site.data.keyword.cloud_notm}} is usually a shared responsibility. In general terms, {{site.data.keyword.cloud_notm}} is responsible for the recovery of any {{site.data.keyword.cloud_notm}} services that have been affected by a disaster. The customer is responsible for the recovery of their data and in some circumstances, for recreating service instances and related configuration. As well as the service-specific BCDR documenation, ensure you have read and understand {{site.data.keyword.cloud_notm}}'s [shared responsibility model](docs/resiliency?topic=resiliency-resiliency-and-shared-responsibility) too.
